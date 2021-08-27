@@ -1,0 +1,74 @@
+*{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 17px;
+}
+body{
+    background-image: url("beach-1.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+fieldset{
+    max-width: 600px;
+    margin:50px auto;
+    border:2px solid #22333b;
+    padding: 20px;
+    background-color: rgba(128, 128,128, 0.4);
+}
+
+legend{
+    font-weight: bold;
+    font-size:40px;
+    letter-spacing: 2px;
+    text-shadow: 1.5px 1.5px whitesmoke;
+
+}
+h2{
+    text-shadow: 1px 1px whitesmoke;
+
+}
+h2::after{
+    content:" ";
+    display: block;
+    width: 80%;
+    border-bottom: 1.5px solid #22333b;
+}
+
+input{
+    padding: 3px;
+    max-height: 30px;
+}
+#tickets{
+    max-height: 30px;
+}
+button,
+input[type="reset"]{
+    position: relative;
+    border:2px solid #22333b;
+    border-radius: 2px;
+    box-shadow: 1px 5px #1a1110;
+    margin-bottom: 15px;
+}
+button:hover,
+input[type="reset"]:hover{
+
+    top:2px;
+    box-shadow: 1px 3px #1a1110;
+}
+button:active,
+input[type="reset"]:active{
+    top:5px;
+    box-shadow: none;
+}
+input:hover,
+input:active,
+textarea:hover,
+textarea:active{
+    box-shadow: 1px 1px #1a1110;
+}
+#submit{
+    padding: 8px;
+    margin-left: 40px;
+    font-weight: bold;
+}
