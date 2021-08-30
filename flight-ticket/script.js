@@ -65,7 +65,7 @@ $('#basket').append('<div class="itemBasket" data-price='+$("#price").text() + '
 +"Price: "+$('#price').html()+ "--EUR"+"<br>"
 +"<button class='remov'>Remove</button></div>");
 
-sumAll+=parseInt((costs*numberOf+(costs*numberOf*chargeClass))*returnFlight);
+sumAll+=parseFloat((costs*numberOf+(costs*numberOf*chargeClass))*returnFlight);
 $('#total-price').text(sumAll);
 console.log(sumAll);
 
@@ -85,7 +85,7 @@ $('#number').val(1);
 
 
 $(document).on('click','.remov',function(){
-  sumAll-=parseInt($(this).closest('div').attr("data-price"));
+  sumAll-=parseFloat($(this).closest('div').attr("data-price"));
   $(this).closest('div').remove();
 $('#total-price').text(sumAll);
 });
